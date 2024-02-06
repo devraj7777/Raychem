@@ -1123,7 +1123,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
+        "x": 920,
         "y": 140,
         "wires": []
     },
@@ -2082,7 +2082,7 @@
         "z": "56aadc5c2acdc551",
         "mongodb": "a662ec5f58a81769",
         "name": "",
-        "collection": "test1",
+        "collection": "test2",
         "payonly": true,
         "upsert": false,
         "multi": false,
@@ -2118,8 +2118,8 @@
         "shape": "circle",
         "showGlow": true,
         "name": "",
-        "x": 550,
-        "y": 200,
+        "x": 470,
+        "y": 140,
         "wires": []
     },
     {
@@ -2243,6 +2243,78 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "60a604435ce76cdf",
+        "type": "inject",
+        "z": "56aadc5c2acdc551",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 720,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c3bd508923e56dc",
+        "type": "inject",
+        "z": "56aadc5c2acdc551",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 580,
+        "wires": [
+            [
+                "29fdfb863b90ca65"
+            ]
+        ]
+    },
+    {
+        "id": "29fdfb863b90ca65",
+        "type": "debug",
+        "z": "56aadc5c2acdc551",
+        "name": "debug 34",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 580,
+        "wires": []
     },
     {
         "id": "4be9c8eec89664fd",
